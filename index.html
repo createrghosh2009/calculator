@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            body{
+                text-align: center;
+                background-color: rgba(8, 252, 232, 0.5);
+            }
+            input{
+                color: white;
+                background-color: rgb(212, 71, 255);
+                font-size: 50px;
+            }
+            h1{
+               color: blue;
+            }
+            hr{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="form_1">
+            <h1>Calculator</h1>
+            <hr>
+        <input type="text"  name="t1">
+        <br>
+        <br>
+        <input type="button" value="/" name="b_/" onclick="form_1.t1.value+='/'">
+        <input type="button" value="*" name="b_*" onclick="form_1.t1.value+='*'">
+        <input type="button" value="-" name="b_-" onclick="form_1.t1.value+='-'">
+        <br>
+        <br>
+        <input type="button" value="7" name="b_7" onclick="form_1.t1.value+=7">
+        <input type="button" value="8" name="b_8" onclick="form_1.t1.value+=8">
+        <input type="button" value="9" name="b_9" onclick="form_1.t1.value+=9">
+        <br>
+        <br>
+        <input type="button" value="4" name="b_4" onclick="form_1.t1.value+=4">
+        <input type="button" value="5" name="b_5" onclick="form_1.t1.value+=5">
+        <input type="button" value="6" name="b_6" onclick="form_1.t1.value+=6">
+        <br>
+        <br>
+        <input type="button" value="1" name="b_1" onclick="form_1.t1.value+=1">
+        <input type="button" value="2" name="b_2" onclick="form_1.t1.value+=2">
+        <input type="button" value="3" name="b_3" onclick="form_1.t1.value+=3">
+        <br>
+        <br>
+        <input type="button" value="0" name="b_0" onclick="form_1.t1.value+=0">
+        <input type="button" value="+" name="b_+" onclick="form_1.t1.value+='+'">
+        <br>
+        <br>
+        <input type="button" value="=" name="b_=" onclick="form_1.t1.value=eval(form_1.t1.value)">
+        </form>
+    </body>
+</html>
